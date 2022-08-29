@@ -1,0 +1,15 @@
+{% extends "../base.twig" %}
+{% block main %}
+
+	<div id="form">
+		<form action="/repSounds/{{file_id}}" method="post">
+			<div>
+				<label  for="tel">numero de telephone :</label>
+				<input  type="text" id="tel" name="tel">
+			</div>
+			<div id="button">
+				<button  type="submmit">Envoyer</button>
+			</div>
+		</form>
+	</div>
+{% endblock %}

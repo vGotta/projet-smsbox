@@ -1,0 +1,142 @@
+.navbar {
+
+    background: linear-gradient(0deg, rgba(151, 95, 163, 1) 1%, rgba(107, 48, 131, 1) 35%);
+}
+
+body {
+    background-color: rgb(209, 209, 209);
+}
+
+.card {
+
+    display: inline-flex;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(151, 95, 163, 1) 1%, rgba(107, 48, 131, 1) 35%);
+    color: white;
+    border: 2px solid black;
+    width: 600px;
+    height: 500px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.card-body {
+    background-image: url(/images/smartphone.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+
+.card-title {
+    margin-top: 30px;
+    margin-bottom: 130px;
+    font-size: x-large;
+}
+
+.card-text {
+
+    margin-top: 130px;
+}
+
+#cover {
+    height: 100%;
+    width: 100%;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    background-image: url(/images/envoi-sms.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: x-large;
+    color: black;
+
+}
+
+#form label {
+    font-size: xx-large;
+
+}
+
+form div {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+footer {
+    background: linear-gradient(0deg, rgba(151, 95, 163, 1) 1%, rgba(107, 48, 131, 1) 35%);
+    font-size: x-large;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+#aud-recorder {
+    border: 1px solid black;
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    color: white;
+    background: linear-gradient(0deg, rgba(151, 95, 163, 1) 1%, rgba(107, 48, 131, 1) 35%);
+
+}
+
+#aud-recorder button {
+    margin-top: 10px;
+}
+
+#aud-recorder div {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 709px) {
+
+    .navbar {
+        background-color: rgb(209, 209, 209);
+
+    }
+
+    .card {
+        display: inline-flex;
+        justify-content: center;
+        background: linear-gradient(0deg, rgba(151, 95, 163, 1) 1%, rgba(107, 48, 131, 1) 35%);
+        color: white;
+        border: 2px solid black;
+        width: 300px;
+        height: 250px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+
+    .card-title {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: medium;
+    }
+
+    .card-text {
+
+        margin-top: 30px;
+    }
+
+
+}
+
+@media screen and (max-width: 709px) {
+    #form {
+        display: flex;
+        justify-content: center;
+        font-size: medium;
+        color: black;
+    }
+}

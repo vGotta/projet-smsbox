@@ -1,0 +1,30 @@
+{% extends "../base.twig" %}
+{% block main %}
+	<div id="aud-recorder">
+		<h3>
+			Record Audio</h3>
+		<div class="recording" id="aud-record-status">
+			Cliquez sur le bouton pour commencer l'enregistrement
+		</div>
+
+		<button type="button" id="start-aud-recording" data-bs-toggle="modal" data-bs-target="#soundModal" onclick="startRecording()">Commencer l'enregistrement
+		</button>
+
+		<button type="button" id="stop-aud-recording" data-bs-toggle="modal" data-bs-target="#soundModal" disabled onclick="stopRecording(this,document.getElementById('start-aud-recording'))">
+			Stop recording
+		</button>
+	</div>
+	{% for sound in sounds %}
+		<div class="card">
+			<div class="card-header">
+				Featured
+			</div>
+			<div class="card-body">
+				<h5 class="card-title">{{sound.user_reference}}</h5>
+				<a href="/sendmessagetel/{{sound.file_id}}" class="btn btn-primary">Envoyer son</a>
+				<p class="card-text">{{sound.file_id}}</p>
+			</div>
+		</div>
+	{% endfor %}
+	{% include "../layouts/_modalConfirm.twig" %}
+{% endblock %}
